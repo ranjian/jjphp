@@ -1,4 +1,3 @@
 <?php
-require './home/c/home.php';
-new home();
+require './jjphp/jj.php';
 ?>
