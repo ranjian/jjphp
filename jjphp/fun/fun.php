@@ -24,7 +24,7 @@ function route(){
 
     $n = count($para);
     if($n>0){
-        $a = $para[$n-1];
+        $a = $para[$n-1]?:$a;
         unset($para[$n-1]);
     }
     if($n>1){

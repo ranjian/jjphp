@@ -1,12 +1,13 @@
 <?php
 namespace home\c;
 use jjphp\c;
+use jjphp\db\m;
 
 class home extends c{
 	function index(){
-	    $rs = m('sys_boot')->getDbFields();
-	    var_dump($rs);
-		echo 123;exit;
+	    $m = new m();
+	    $m->find();
+		echo 'home/index';exit;
 	}
 }
 ?>
